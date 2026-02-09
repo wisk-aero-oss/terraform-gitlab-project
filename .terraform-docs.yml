@@ -51,10 +51,10 @@ content: |-
 
   ```hcl
   module "example" {
-  {{"    " -}} source = "wisk-aero-oss/<module-name>/google"
+  {{"    " -}} source = "wisk-aero-oss/project/gitlab"
   {{"    " -}} # Recommend pinning every module to a specific version
   {{"    " -}} # version = "x.x.x"
-  {{- if .Module.RequiredInputs }}
+  {{- if .Module.RequiredInputs -}}
     {{"\n    " -}} # Required variables
     {{- range .Module.RequiredInputs }}
       {{"    " -}}{{ .Name }} ={{ .GetValue }}
@@ -62,7 +62,6 @@ content: |-
   {{- end }}
   }
   ```
-
   {{ .Requirements }}
 
   {{ .Providers }}

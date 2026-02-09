@@ -4,12 +4,6 @@
 
 # Run: tflint --init
 
-plugin "google" {
-    enabled = true
-    version = "0.35.0"
-    source  = "github.com/terraform-linters/tflint-ruleset-google"
-}
-
 rule "terraform_deprecated_index" {
   enabled = true
 }
