@@ -102,6 +102,11 @@ variable "namespace_id" {
   type        = string
   default     = ""
 }
+variable "path" {
+  description = "The path of the project"
+  type        = string
+  default     = null
+}
 variable "public_jobs" {
   description = "If true, jobs can be viewed by non-project members."
   type        = bool

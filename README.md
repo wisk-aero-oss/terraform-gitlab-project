@@ -90,6 +90,7 @@ No modules.
 | <a name="input_mr_approval_reset_approvals_on_push"></a> [mr\_approval\_reset\_approvals\_on\_push](#input\_mr\_approval\_reset\_approvals\_on\_push) | Set to true to remove all approvals in a merge request when new commits are pushed to its source branch. | `bool` | `true` | no |
 | <a name="input_name"></a> [name](#input\_name) | The name of the project. | `string` | n/a | yes |
 | <a name="input_namespace_id"></a> [namespace\_id](#input\_namespace\_id) | The namespace (group or user) of the project. | `string` | `""` | no |
+| <a name="input_path"></a> [path](#input\_path) | The path of the project | `string` | `null` | no |
 | <a name="input_public_jobs"></a> [public\_jobs](#input\_public\_jobs) | If true, jobs can be viewed by non-project members. | `bool` | `false` | no |
 | <a name="input_push_prevent_secrets"></a> [push\_prevent\_secrets](#input\_push\_prevent\_secrets) | GitLab will reject any files that are likely to contain secrets. | `bool` | `true` | no |
 | <a name="input_repository_access_level"></a> [repository\_access\_level](#input\_repository\_access\_level) | Set the repository access level. Valid values are disabled, private, enabled. | `string` | `"enabled"` | no |

@@ -39,6 +39,7 @@ resource "gitlab_project" "self" {
   model_registry_access_level            = var.model_registry_access_level
   monitor_access_level                   = var.monitor_access_level
   namespace_id                           = var.namespace_id
+  path                                   = var.path
   public_jobs                            = var.public_jobs
   repository_access_level                = var.repository_access_level
   requirements_access_level              = var.requirements_access_level
