@@ -105,10 +105,11 @@ resource "gitlab_project_environment" "self" {
     && var.environments_access_level == "enabled"
   }
   #auto_stop_setting = "" # only for test environment
-  description = each.value.description
-  name        = each.key
-  project     = gitlab_project.self.id
-  tier        = each.value.tier
+  description         = each.value.description
+  name                = each.key
+  project             = gitlab_project.self.id
+  stop_before_destroy = true
+  tier                = each.value.tier
 }
 resource "gitlab_project_protected_environment" "self" {
   for_each = {
